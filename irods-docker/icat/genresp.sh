@@ -22,7 +22,7 @@ echo >> $RESPFILE
 
 echo "1248" >> $RESPFILE                  # control port
 openssl rand -base64 32 | sed 's,/,S,g' | cut -c 1-32 >> $RESPFILE # control plane key
-#echo $RESPFILE
+echo >> $RESPFILE                            # accept schema url
 
 echo "rods" >> $RESPFILE                  # iRODS admin account
 openssl rand -base64 16 | sed 's,/,S,g' | cut -c 1-16 >> $RESPFILE      # iRODS admin password
