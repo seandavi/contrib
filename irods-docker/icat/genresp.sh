@@ -8,7 +8,7 @@ RESPFILE=$1
 
 echo "irods" > $RESPFILE                 # service account user ID
 echo "irods" >> $RESPFILE                # service account group ID
-echo "NIHNCIZone" > $RESPFILE           # initial zone name
+echo "NIHNCIZone" >> $RESPFILE           # initial zone name
 echo "1247" >> $RESPFILE                 # service port #
 echo "20000" >> $RESPFILE                # transport starting port #
 echo "20199" >> $RESPFILE                # transport ending port #
