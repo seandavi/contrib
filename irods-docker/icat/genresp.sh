@@ -34,3 +34,5 @@ echo "ICAT" >> $RESPFILE                  # database DB name
 echo "irods" >> $RESPFILE                 # database admin username
 openssl rand -base64 16 | sed 's,/,S,g' | cut -c 1-16 >> $RESPFILE        # database admin password
 echo "yes" >> $RESPFILE                   # confirm database settings
+
+cat $RESPFILE
